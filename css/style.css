@@ -7,11 +7,12 @@
 header{
   height: 200px;
   background: yellow;
-  margin: 10px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 main{
-  height: 1000px;
+  height: 1200px;
   background: grey;
 }
 
@@ -19,29 +20,28 @@ section{
   height: 400px;
   background: purple;
   width: 30%;
-  margin: 10px;
-}
-
-footer{
-  height: 200px;
-  background: lightblue;
-  width: 20%;
-  margin: 10px;
+  float: left;
+  transform: translate(12%, 0%);
+  margin-top: 10px;
 }
 
 main .left{
   height: 400px;
   width: 30%;
   background: red;
-  margin: 10px;
   float:left;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 main .right{
-  height: 400px;
+  height: 1000px;
   width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
   background: red;
-  margin: 10px;
   float: right;
 }
 
@@ -51,7 +51,23 @@ main::after{
   content: "";
 }
 
+.text-right{
+  height: 300px;
+  background: pink;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+footer{
+  height: 200px;
+  background: lightblue;
+  width: 100%;
+  margin-top: 10px;
+}
+
 .toolbar{
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
